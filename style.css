@@ -1,0 +1,261 @@
+/* ===== Reset CSS ===== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==============================
+   Segoe UI Font Family
+============================== */
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../font/segoeui.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../font/segoeuii.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./font/segoeuil.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./font/seguisl.ttf") format("truetype");
+    font-weight: 350;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./font/seguisb.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./font/segoeuib.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./font/segoeuiz.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("./font/seguisb.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* ===== Common CSS ===== */
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.7;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.common_btn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E9B44C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.common_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(241, 114, 40, 0.3);
+}
+
+/*=================
+nav styling 
+ =================*/
+nav {
+    background-color: #2E2622;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.nav_inner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_inner h1 {
+    color: #E9B44C;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.nav_manu {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_manu a {
+    color: #FBF6EF;
+    transition: all 0.3s ease;
+}
+
+.nav_manu a:hover {
+    color: #959492;
+}
+
+/*=========================== 
+hero styling
+==========================*/
+.hero {
+    background-image: linear-gradient(rgba(20, 15, 12, 0.55)0%, rgba(20, 15, 12, 0.65) 100%), url(./image/bg-image.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.hero_contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero_contant h2 {
+    color: #FBF6EF;
+    font-size: 50px;
+    font-weight: bold;
+    width: 700px;
+    text-align: center;
+}
+
+.hero_contant p:first-child {
+    color: #E9B44C;
+}
+
+.hero_contant p:last-of-type {
+    color: #F0E9DD;
+    width: 500px;
+    text-align: center;
+}
+
+.hero_btn {
+    margin-top: 30px;
+}
+
+.hero_btn .common_btn {
+    border-radius: 50px !important;
+    color: #2E2622 !important;
+    font-weight: bold;
+}
