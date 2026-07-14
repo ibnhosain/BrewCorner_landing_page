@@ -103,6 +103,7 @@ table {
 body {
     font-family: "Segoe UI", sans-serif;
     font-size: 16px;
+    background-color: #FBF6EF;
 }
 
 .container {
@@ -258,4 +259,181 @@ hero styling
     border-radius: 50px !important;
     color: #2E2622 !important;
     font-weight: bold;
+}
+
+/* =================
+ story section styling
+================ */
+.story_section_inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.story_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.story_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story_text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2E2622;
+}
+
+.story_text p {
+    color: #5A4F47;
+}
+
+.story_btton .common_btn {
+    border-radius: 50px;
+    color: #2E2622;
+    font-weight: bold;
+}
+
+/* ===============Popular Picks section================ */
+
+.Popular_picks {
+    background-color: #F1E7D8;
+}
+
+.popular_innar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+
+}
+
+.popular_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.popular_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular_heading p {
+    color: #E9B44C;
+}
+
+.popular_heading h2 {
+    color: #2E2622;
+    font-size: 40px;
+
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card h3 {
+    margin-top: 30px;
+    color: #2E2622;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card p:first-of-type {
+    color: #2E2622;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 250px;
+    text-align: center;
+}
+
+.card:last-of-type {
+    color: #E9B44C;
+    font-weight: bold;
+}
+
+
+/* =============Why Us Section============== */
+.hwy_us_section {
+    background-color: #FFFFFF;
+}
+
+.why_us_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why_us_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why_us_heading p {
+    color: #E9B44C;
+    text-transform: capitalize;
+}
+
+.why_us_heading h2 {
+    margin-top: 10px;
+    color: #2E2622;
+    font-size: 40px;
+}
+
+.why_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2E2622 ;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+}
+.why_icon img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.why_us_text{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+gap: 50px;
+}
+
+.Why_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
